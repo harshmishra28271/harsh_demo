@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BLUTH LOGO</title>
+</head>
+<body>
+    <canvas id="c" width="1000" height="650"></canvas>
+
+    <script>
+        var ctx = document.getElementById("c").getContext("2d");
+
+        ctx.beginPath();
+        ctx.moveTo(80, 180);
+        ctx.lineTo(250, 45);
+        ctx.lineTo(295, 75);
+        ctx.lineTo(295, 25);
+        ctx.lineTo(335, 25);
+        ctx.lineTo(335, 105);
+        ctx.lineTo(405, 165);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 6;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(80, 180);
+        ctx.lineTo(115, 180);
+        ctx.lineTo(115, 365);
+        ctx.lineTo(190, 365);
+        ctx.strokeStyle = "red";
+        ctx.lineWidth = 6;
+        ctx.stroke();
+
+        ctx.fillStyle = "blue";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "alphabetic";
+        ctx.font = "bold 145px Georgia";
+        ctx.fillText("BLUTH", 495, 365);
+
+        ctx.beginPath();
+        ctx.moveTo(115, 395);
+        ctx.lineTo(825, 395);
+        ctx.strokeStyle = "bluess";
+        ctx.lineWidth = 6;
+        ctx.stroke();
+
+        ctx.fillStyle = "orange";
+        ctx.font = "70px Georgia";
+        ctx.fillText("COMPANY", 470, 475);
+    </script>
+</body>
+</html>
